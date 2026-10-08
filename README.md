@@ -1,7 +1,7 @@
 # TableFlow
 
 > Projet NoSQL, Mastère Data Engineering & IA, EFREI Paris (M1)
-> Équipe : _Prénom Nom_, _Prénom Nom_, _Prénom Nom_, _Prénom Nom_
+> Équipe : Annaêlle BAYIN , Hadir DRISS, Pascale KAMDEM, Alberto BONGUELE
 
 TableFlow est la plateforme de données d'un réseau de restaurants. Elle ne propose pas d'interface graphique : ce projet porte sur la façon dont les données sont organisées, partagées et transformées entre plusieurs services.
 
@@ -147,10 +147,10 @@ Il produit chaque jour, pour chaque restaurant, une courte liste : _ingrédient 
 
 | Membre | Responsabilité |
 |---|---|
-| _Prénom Nom_ | Service Carte et import des données Open Food Facts |
-| _Prénom Nom_ | Service Stock |
-| _Prénom Nom_ | Service Commande et génération des données de test |
-| _Prénom Nom_ | Communication entre services, service Anti-gaspi, documentation |
+| 1 | Service Carte et import des données Open Food Facts |
+| 2 | Service Stock |
+| 3 | Service Commande et génération des données de test |
+| 4 | Communication entre services, service Anti-gaspi, documentation |
 
 La définition des commandes et des agrégats est faite **par toute l'équipe ensemble**, car tout le reste du projet en dépend.
 
