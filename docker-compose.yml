@@ -1,0 +1,42 @@
+services:
+  redis:
+    image: redis:7.4-alpine
+    container_name: nosql-redis
+    ports:
+      - "6379:6379"
+    command:
+      - redis-server
+      - --appendonly
+      - "yes"            # AOF : chaque écriture est journalisée sur disque
+      - --appendfsync
+      - everysec         # flush disque chaque seconde (max 1 s de perte en cas de crash)
+      - --save
+      - "60 1"           # snapshot RDB toutes les 60 s s'il y a eu au moins 1 changement
+    volumes:
+      - redis-data:/data # les fichiers AOF + RDB vivent ici, hors du conteneur
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  redisinsight:
+    image: redis/redisinsight:3.8.0
+    container_name: nosql-redisinsight
+    ports:
+      - "5540:5540"
+    environment:
+      RI_REDIS_HOST: redis
+      RI_REDIS_PORT: "6379"
+      RI_REDIS_ALIAS: nosql-redis
+    volumes:
+      - redisinsight-data:/data # connexions, historique Workbench, préférences
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  redis-data:
+  redisinsight-data:
