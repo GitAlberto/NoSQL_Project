@@ -36,20 +36,20 @@ Plutôt qu'un seul gros système qui sait tout, TableFlow est découpé en **tro
 
 | Service | Son métier | Il est le seul à pouvoir modifier... |
 |---|---|---|
-| **Carte** | Décrire ce que propose chaque restaurant | les plats, les recettes, les prix, les allergènes |
+| **Carte** | Décrire le réseau de restaurants et ce que propose chacun d'eux | les restaurants, les plats, les recettes, les prix, les allergènes |
 | **Stock** | Savoir ce qu'il reste en cuisine | les quantités d'ingrédients et leurs dates de péremption |
 | **Commande** | Enregistrer ce que les clients achètent | les commandes et leur statut |
 | **Anti-gaspi** | Conseiller le gérant | rien : il ne fait que lire et analyser |
 
 ```mermaid
 flowchart LR
-    Carte["Carte<br/>plats, recettes, prix"]
+    Carte["Carte<br/>restaurants, plats, recettes, prix"]
     Stock["Stock<br/>ingrédients, péremption"]
     Commande["Commande<br/>commandes clients"]
     Gaspi["Anti-gaspi<br/>conseils au gérant"]
 
-    Carte -- "nouveau plat, prix ou recette modifiés" --> Commande
-    Carte -- "nouvelle recette" --> Stock
+    Carte -- "restaurant ouvert ou fermé, plat, prix ou recette modifiés" --> Commande
+    Carte -- "restaurant ouvert, nouvelle recette" --> Stock
     Commande -- "commande passée" --> Stock
     Stock -- "plat plus disponible" --> Commande
     Commande -- "ventes" --> Gaspi
@@ -74,6 +74,8 @@ Une **commande** est une demande adressée à un service pour qu'il fasse quelqu
 
 | Service | Commande | Ce qu'elle demande |
 |---|---|---|
+| Carte | Ouvrir un restaurant | Ajouter un restaurant au réseau |
+| Carte | Fermer un restaurant | Retirer un restaurant de la vente, temporairement ou définitivement |
 | Carte | Créer un plat | Ajouter un plat à la carte d'un restaurant, avec sa recette et son prix |
 | Carte | Modifier un prix | Changer le prix d'un plat |
 | Carte | Modifier une recette | Changer les ingrédients d'un plat (et donc ses allergènes) |
@@ -81,7 +83,7 @@ Une **commande** est une demande adressée à un service pour qu'il fasse quelqu
 | Commande | Passer une commande | Un client achète un ou plusieurs plats dans un restaurant |
 | Commande | Annuler une commande | Un client ou le restaurant annule une commande |
 
-Exemple de refus : une commande est refusée si l'un des plats n'est plus disponible, ou s'il contient un allergène que le client a déclaré.
+Exemple de refus : une commande est refusée si le restaurant est fermé, si l'un des plats n'est plus disponible, ou s'il contient un allergène que le client a déclaré.
 
 ## 5. Les agrégats
 
@@ -89,9 +91,12 @@ Un **agrégat** est l'ensemble des informations qu'un service garde ensemble, pa
 
 | Agrégat | Service | Ce qu'il contient |
 |---|---|---|
+| **Restaurant** | Carte | Identifiant, nom, ville, adresse, modes de vente (sur place, livraison), statut (ouvert, fermé) |
 | **Plat** | Carte | Nom, restaurant, prix, recette (ingrédients et quantités), allergènes |
 | **Stock d'un ingrédient** | Stock | Restaurant, ingrédient, quantité restante, lots et dates de péremption |
 | **Commande** | Commande | Client, restaurant, plats achetés avec leur prix et leurs allergènes **au moment de l'achat**, total, statut |
+
+**Un restaurant, un seul propriétaire.** Le restaurant est utilisé par tous les services, mais seul le service Carte peut le créer ou le modifier. Les autres services en gardent une copie, et tous utilisent le même identifiant de restaurant.
 
 **Un choix important :** une commande garde une photo du prix et des allergènes au moment de l'achat. Si le prix ou la recette change le lendemain, la commande d'hier reste exacte. C'est indispensable pour la facturation, et surtout en cas de réaction allergique.
 
@@ -101,6 +106,8 @@ Un **réplicat** est une copie, dans un service, d'une information qui appartien
 
 | Information copiée | Propriétaire | Copiée dans | Pourquoi |
 |---|---|---|---|
+| Identifiant, nom, statut du restaurant | Carte | Commande | Pour refuser une commande dans un restaurant fermé |
+| Identifiant du restaurant | Carte | Stock | Pour créer le stock d'un nouveau restaurant |
 | Nom, prix, allergènes d'un plat | Carte | Commande | Pour prendre une commande sans dépendre du service Carte |
 | Disponibilité d'un plat | Stock | Commande | Pour refuser immédiatement un plat épuisé |
 | Recette d'un plat | Carte | Stock | Pour savoir quels ingrédients retirer quand un plat est vendu |
@@ -113,6 +120,8 @@ Un **événement** est l'annonce d'un fait qui s'est produit. Il est défini par
 
 | Événement | Émetteur | Destinataires | Donnée concernée | Effet |
 |---|---|---|---|---|
+| Restaurant ouvert | Carte | Commande, Stock | Le restaurant complet | **Crée** les copies |
+| Restaurant fermé | Carte | Commande | Le statut | Plus aucune commande acceptée dans ce restaurant |
 | Plat créé | Carte | Commande, Stock | Le plat complet | **Crée** les copies |
 | Prix modifié | Carte | Commande | Le prix | Met à jour la copie |
 | Recette modifiée | Carte | Commande, Stock | La recette et les allergènes | Met à jour la copie |
@@ -147,7 +156,7 @@ Il produit chaque jour, pour chaque restaurant, une courte liste : _ingrédient 
 
 | Membre | Responsabilité |
 |---|---|
-| 1 | Service Carte et import des données Open Food Facts |
+| 1 | Service Carte (restaurants et plats) et import des données Open Food Facts |
 | 2 | Service Stock |
 | 3 | Service Commande et génération des données de test |
 | 4 | Communication entre services, service Anti-gaspi, documentation |
