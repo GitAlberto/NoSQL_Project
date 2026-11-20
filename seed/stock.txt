@@ -1,0 +1,744 @@
+HSET stock:R01:lot:L0001 restaurant R01 ingredient basilic quantite 50 peremption 2026-11-23
+ZADD stock:R01:peremption 20261123 L0001
+ZADD stock:R01:basilic:lots 20261123 L0001
+HSET stock:R01 basilic 50
+HSET stock:R01:lot:L0002 restaurant R01 ingredient biscuit quantite 680 peremption 2027-01-24
+ZADD stock:R01:peremption 20270124 L0002
+ZADD stock:R01:biscuit:lots 20270124 L0002
+HSET stock:R01 biscuit 680
+HSET stock:R01:lot:L0003 restaurant R01 ingredient cacahuete quantite 540 peremption 2027-01-11
+ZADD stock:R01:peremption 20270111 L0003
+ZADD stock:R01:cacahuete:lots 20270111 L0003
+HSET stock:R01 cacahuete 540
+HSET stock:R01:lot:L0004 restaurant R01 ingredient cacao quantite 60 peremption 2026-12-27
+ZADD stock:R01:peremption 20261227 L0004
+ZADD stock:R01:cacao:lots 20261227 L0004
+HSET stock:R01:lot:L0005 restaurant R01 ingredient cacao quantite 60 peremption 2027-02-13
+ZADD stock:R01:peremption 20270213 L0005
+ZADD stock:R01:cacao:lots 20270213 L0005
+HSET stock:R01 cacao 120
+HSET stock:R01:lot:L0006 restaurant R01 ingredient cafe quantite 780 peremption 2027-05-23
+ZADD stock:R01:peremption 20270523 L0006
+ZADD stock:R01:cafe:lots 20270523 L0006
+HSET stock:R01 cafe 780
+HSET stock:R01:lot:L0007 restaurant R01 ingredient citron quantite 810 peremption 2026-11-26
+ZADD stock:R01:peremption 20261126 L0007
+ZADD stock:R01:citron:lots 20261126 L0007
+HSET stock:R01 citron 810
+HSET stock:R01:lot:L0008 restaurant R01 ingredient crevette quantite 2040 peremption 2026-11-24
+ZADD stock:R01:peremption 20261124 L0008
+ZADD stock:R01:crevette:lots 20261124 L0008
+HSET stock:R01:lot:L0009 restaurant R01 ingredient crevette quantite 3360 peremption 2026-11-23
+ZADD stock:R01:peremption 20261123 L0009
+ZADD stock:R01:crevette:lots 20261123 L0009
+HSET stock:R01 crevette 5400
+HSET stock:R01:lot:L0010 restaurant R01 ingredient mascarpone quantite 1200 peremption 2026-12-04
+ZADD stock:R01:peremption 20261204 L0010
+ZADD stock:R01:mascarpone:lots 20261204 L0010
+HSET stock:R01 mascarpone 1200
+HSET stock:R01:lot:L0011 restaurant R01 ingredient moutarde quantite 300 peremption 2027-03-01
+ZADD stock:R01:peremption 20270301 L0011
+ZADD stock:R01:moutarde:lots 20270301 L0011
+HSET stock:R01:lot:L0012 restaurant R01 ingredient moutarde quantite 210 peremption 2027-02-13
+ZADD stock:R01:peremption 20270213 L0012
+ZADD stock:R01:moutarde:lots 20270213 L0012
+HSET stock:R01 moutarde 510
+HSET stock:R01:lot:L0013 restaurant R01 ingredient mozzarella quantite 1620 peremption 2026-11-24
+ZADD stock:R01:peremption 20261124 L0013
+ZADD stock:R01:mozzarella:lots 20261124 L0013
+HSET stock:R01:lot:L0014 restaurant R01 ingredient mozzarella quantite 2750 peremption 2026-11-24
+ZADD stock:R01:peremption 20261124 L0014
+ZADD stock:R01:mozzarella:lots 20261124 L0014
+HSET stock:R01 mozzarella 4370
+HSET stock:R01:lot:L0015 restaurant R01 ingredient nouilles_riz quantite 3150 peremption 2027-05-23
+ZADD stock:R01:peremption 20270523 L0015
+ZADD stock:R01:nouilles_riz:lots 20270523 L0015
+HSET stock:R01:lot:L0016 restaurant R01 ingredient nouilles_riz quantite 2700 peremption 2027-07-14
+ZADD stock:R01:peremption 20270714 L0016
+ZADD stock:R01:nouilles_riz:lots 20270714 L0016
+HSET stock:R01 nouilles_riz 5850
+HSET stock:R01:lot:L0017 restaurant R01 ingredient oeuf quantite 2400 peremption 2026-12-01
+ZADD stock:R01:peremption 20261201 L0017
+ZADD stock:R01:oeuf:lots 20261201 L0017
+HSET stock:R01 oeuf 2400
+HSET stock:R01:lot:L0018 restaurant R01 ingredient oignon quantite 3300 peremption 2027-01-09
+ZADD stock:R01:peremption 20270109 L0018
+ZADD stock:R01:oignon:lots 20270109 L0018
+HSET stock:R01 oignon 3300
+HSET stock:R01:lot:L0019 restaurant R01 ingredient pate quantite 7500 peremption 2027-05-27
+ZADD stock:R01:peremption 20270527 L0019
+ZADD stock:R01:pate:lots 20270527 L0019
+HSET stock:R01:lot:L0020 restaurant R01 ingredient pate quantite 5250 peremption 2027-05-16
+ZADD stock:R01:peremption 20270516 L0020
+ZADD stock:R01:pate:lots 20270516 L0020
+HSET stock:R01 pate 12750
+HSET stock:R01:lot:L0021 restaurant R01 ingredient poulet quantite 2400 peremption 2026-11-21
+ZADD stock:R01:peremption 20261121 L0021
+ZADD stock:R01:poulet:lots 20261121 L0021
+HSET stock:R01 poulet 2400
+HSET stock:R01:lot:L0022 restaurant R01 ingredient riz quantite 2850 peremption 2027-01-09
+ZADD stock:R01:peremption 20270109 L0022
+ZADD stock:R01:riz:lots 20270109 L0022
+HSET stock:R01 riz 2850
+HSET stock:R01:lot:L0023 restaurant R01 ingredient tomate quantite 1300 peremption 2026-11-29
+ZADD stock:R01:peremption 20261129 L0023
+ZADD stock:R01:tomate:lots 20261129 L0023
+HSET stock:R01 tomate 1300
+
+HSET stock:R02:lot:L0024 restaurant R02 ingredient anchois quantite 240 peremption 2026-11-23
+ZADD stock:R02:peremption 20261123 L0024
+ZADD stock:R02:anchois:lots 20261123 L0024
+HSET stock:R02:lot:L0025 restaurant R02 ingredient anchois quantite 150 peremption 2026-11-23
+ZADD stock:R02:peremption 20261123 L0025
+ZADD stock:R02:anchois:lots 20261123 L0025
+HSET stock:R02 anchois 390
+HSET stock:R02:lot:L0026 restaurant R02 ingredient beurre quantite 240 peremption 2026-12-03
+ZADD stock:R02:peremption 20261203 L0026
+ZADD stock:R02:beurre:lots 20261203 L0026
+HSET stock:R02:lot:L0027 restaurant R02 ingredient beurre quantite 270 peremption 2026-12-04
+ZADD stock:R02:peremption 20261204 L0027
+ZADD stock:R02:beurre:lots 20261204 L0027
+HSET stock:R02 beurre 510
+HSET stock:R02:lot:L0028 restaurant R02 ingredient biscuit quantite 1160 peremption 2027-05-31
+ZADD stock:R02:peremption 20270531 L0028
+ZADD stock:R02:biscuit:lots 20270531 L0028
+HSET stock:R02 biscuit 1160
+HSET stock:R02:lot:L0029 restaurant R02 ingredient cacao quantite 140 peremption 2027-06-24
+ZADD stock:R02:peremption 20270624 L0029
+ZADD stock:R02:cacao:lots 20270624 L0029
+HSET stock:R02 cacao 140
+HSET stock:R02:lot:L0030 restaurant R02 ingredient cafe quantite 450 peremption 2027-04-17
+ZADD stock:R02:peremption 20270417 L0030
+ZADD stock:R02:cafe:lots 20270417 L0030
+HSET stock:R02 cafe 450
+HSET stock:R02:lot:L0031 restaurant R02 ingredient champignon quantite 1800 peremption 2026-11-25
+ZADD stock:R02:peremption 20261125 L0031
+ZADD stock:R02:champignon:lots 20261125 L0031
+HSET stock:R02:lot:L0032 restaurant R02 ingredient champignon quantite 1700 peremption 2026-11-23
+ZADD stock:R02:peremption 20261123 L0032
+ZADD stock:R02:champignon:lots 20261123 L0032
+HSET stock:R02 champignon 3500
+HSET stock:R02:lot:L0033 restaurant R02 ingredient croutons quantite 510 peremption 2027-07-18
+ZADD stock:R02:peremption 20270718 L0033
+ZADD stock:R02:croutons:lots 20270718 L0033
+HSET stock:R02 croutons 510
+HSET stock:R02:lot:L0034 restaurant R02 ingredient mascarpone quantite 1600 peremption 2026-11-29
+ZADD stock:R02:peremption 20261129 L0034
+ZADD stock:R02:mascarpone:lots 20261129 L0034
+HSET stock:R02 mascarpone 1600
+HSET stock:R02:lot:L0035 restaurant R02 ingredient oeuf quantite 900 peremption 2026-11-26
+ZADD stock:R02:peremption 20261126 L0035
+ZADD stock:R02:oeuf:lots 20261126 L0035
+HSET stock:R02:lot:L0036 restaurant R02 ingredient oeuf quantite 2100 peremption 2026-12-04
+ZADD stock:R02:peremption 20261204 L0036
+ZADD stock:R02:oeuf:lots 20261204 L0036
+HSET stock:R02 oeuf 3000
+HSET stock:R02:lot:L0037 restaurant R02 ingredient parmesan quantite 720 peremption 2026-12-03
+ZADD stock:R02:peremption 20261203 L0037
+ZADD stock:R02:parmesan:lots 20261203 L0037
+HSET stock:R02:lot:L0038 restaurant R02 ingredient parmesan quantite 1120 peremption 2026-11-29
+ZADD stock:R02:peremption 20261129 L0038
+ZADD stock:R02:parmesan:lots 20261129 L0038
+HSET stock:R02 parmesan 1840
+HSET stock:R02:lot:L0039 restaurant R02 ingredient poulet quantite 1400 peremption 2026-11-23
+ZADD stock:R02:peremption 20261123 L0039
+ZADD stock:R02:poulet:lots 20261123 L0039
+HSET stock:R02:lot:L0040 restaurant R02 ingredient poulet quantite 1400 peremption 2026-11-22
+ZADD stock:R02:peremption 20261122 L0040
+ZADD stock:R02:poulet:lots 20261122 L0040
+HSET stock:R02 poulet 2800
+HSET stock:R02:lot:L0041 restaurant R02 ingredient riz_arborio quantite 3360 peremption 2027-04-08
+ZADD stock:R02:peremption 20270408 L0041
+ZADD stock:R02:riz_arborio:lots 20270408 L0041
+HSET stock:R02:lot:L0042 restaurant R02 ingredient riz_arborio quantite 3360 peremption 2027-04-01
+ZADD stock:R02:peremption 20270401 L0042
+ZADD stock:R02:riz_arborio:lots 20270401 L0042
+HSET stock:R02 riz_arborio 6720
+HSET stock:R02:lot:L0043 restaurant R02 ingredient salade quantite 2040 peremption 2026-11-22
+ZADD stock:R02:peremption 20261122 L0043
+ZADD stock:R02:salade:lots 20261122 L0043
+HSET stock:R02:lot:L0044 restaurant R02 ingredient salade quantite 3120 peremption 2026-11-24
+ZADD stock:R02:peremption 20261124 L0044
+ZADD stock:R02:salade:lots 20261124 L0044
+HSET stock:R02 salade 5160
+HSET stock:R02:lot:L0045 restaurant R02 ingredient vin_blanc quantite 330 peremption 2027-01-17
+ZADD stock:R02:peremption 20270117 L0045
+ZADD stock:R02:vin_blanc:lots 20270117 L0045
+HSET stock:R02 vin_blanc 330
+
+HSET stock:R03:lot:L0046 restaurant R03 ingredient boeuf quantite 8100 peremption 2026-11-22
+ZADD stock:R03:peremption 20261122 L0046
+ZADD stock:R03:boeuf:lots 20261122 L0046
+HSET stock:R03 boeuf 8100
+HSET stock:R03:lot:L0047 restaurant R03 ingredient cacahuete quantite 440 peremption 2027-01-05
+ZADD stock:R03:peremption 20270105 L0047
+ZADD stock:R03:cacahuete:lots 20270105 L0047
+HSET stock:R03:lot:L0048 restaurant R03 ingredient cacahuete quantite 330 peremption 2027-03-27
+ZADD stock:R03:peremption 20270327 L0048
+ZADD stock:R03:cacahuete:lots 20270327 L0048
+HSET stock:R03 cacahuete 770
+HSET stock:R03:lot:L0049 restaurant R03 ingredient cheddar quantite 780 peremption 2026-11-27
+ZADD stock:R03:peremption 20261127 L0049
+ZADD stock:R03:cheddar:lots 20261127 L0049
+HSET stock:R03:lot:L0050 restaurant R03 ingredient cheddar quantite 810 peremption 2026-11-23
+ZADD stock:R03:peremption 20261123 L0050
+ZADD stock:R03:cheddar:lots 20261123 L0050
+HSET stock:R03 cheddar 1590
+HSET stock:R03:lot:L0051 restaurant R03 ingredient citron quantite 400 peremption 2026-11-27
+ZADD stock:R03:peremption 20261127 L0051
+ZADD stock:R03:citron:lots 20261127 L0051
+HSET stock:R03 citron 400
+HSET stock:R03:lot:L0052 restaurant R03 ingredient nuoc_mam quantite 200 peremption 2027-03-05
+ZADD stock:R03:peremption 20270305 L0052
+ZADD stock:R03:nuoc_mam:lots 20270305 L0052
+HSET stock:R03:lot:L0053 restaurant R03 ingredient nuoc_mam quantite 340 peremption 2027-01-29
+ZADD stock:R03:peremption 20270129 L0053
+ZADD stock:R03:nuoc_mam:lots 20270129 L0053
+HSET stock:R03 nuoc_mam 540
+HSET stock:R03:lot:L0054 restaurant R03 ingredient pain_burger quantite 800 peremption 2026-12-04
+ZADD stock:R03:peremption 20261204 L0054
+ZADD stock:R03:pain_burger:lots 20261204 L0054
+HSET stock:R03:lot:L0055 restaurant R03 ingredient pain_burger quantite 1440 peremption 2026-12-01
+ZADD stock:R03:peremption 20261201 L0055
+ZADD stock:R03:pain_burger:lots 20261201 L0055
+HSET stock:R03 pain_burger 2240
+HSET stock:R03:lot:L0056 restaurant R03 ingredient pain_pita quantite 2080 peremption 2026-11-24
+ZADD stock:R03:peremption 20261124 L0056
+ZADD stock:R03:pain_pita:lots 20261124 L0056
+HSET stock:R03 pain_pita 2080
+HSET stock:R03:lot:L0057 restaurant R03 ingredient pois_chiche quantite 6000 peremption 2027-04-28
+ZADD stock:R03:peremption 20270428 L0057
+ZADD stock:R03:pois_chiche:lots 20270428 L0057
+HSET stock:R03:lot:L0058 restaurant R03 ingredient pois_chiche quantite 5800 peremption 2027-02-08
+ZADD stock:R03:peremption 20270208 L0058
+ZADD stock:R03:pois_chiche:lots 20270208 L0058
+HSET stock:R03 pois_chiche 11800
+HSET stock:R03:lot:L0059 restaurant R03 ingredient salade quantite 1050 peremption 2026-11-22
+ZADD stock:R03:peremption 20261122 L0059
+ZADD stock:R03:salade:lots 20261122 L0059
+HSET stock:R03 salade 1050
+HSET stock:R03:lot:L0060 restaurant R03 ingredient tahini quantite 870 peremption 2027-03-12
+ZADD stock:R03:peremption 20270312 L0060
+ZADD stock:R03:tahini:lots 20270312 L0060
+HSET stock:R03 tahini 870
+HSET stock:R03:lot:L0061 restaurant R03 ingredient tomate quantite 300 peremption 2026-11-24
+ZADD stock:R03:peremption 20261124 L0061
+ZADD stock:R03:tomate:lots 20261124 L0061
+HSET stock:R03:lot:L0062 restaurant R03 ingredient tomate quantite 630 peremption 2026-11-27
+ZADD stock:R03:peremption 20261127 L0062
+ZADD stock:R03:tomate:lots 20261127 L0062
+HSET stock:R03 tomate 930
+HSET stock:R03:lot:L0063 restaurant R03 ingredient vermicelle_riz quantite 1320 peremption 2027-02-19
+ZADD stock:R03:peremption 20270219 L0063
+ZADD stock:R03:vermicelle_riz:lots 20270219 L0063
+HSET stock:R03 vermicelle_riz 1320
+
+HSET stock:R04:lot:L0064 restaurant R04 ingredient anchois quantite 120 peremption 2026-11-24
+ZADD stock:R04:peremption 20261124 L0064
+ZADD stock:R04:anchois:lots 20261124 L0064
+HSET stock:R04 anchois 120
+HSET stock:R04:lot:L0065 restaurant R04 ingredient biere quantite 4050 peremption 2027-07-04
+ZADD stock:R04:peremption 20270704 L0065
+ZADD stock:R04:biere:lots 20270704 L0065
+HSET stock:R04 biere 4050
+HSET stock:R04:lot:L0066 restaurant R04 ingredient boeuf quantite 3500 peremption 2026-11-24
+ZADD stock:R04:peremption 20261124 L0066
+ZADD stock:R04:boeuf:lots 20261124 L0066
+HSET stock:R04 boeuf 3500
+HSET stock:R04:lot:L0067 restaurant R04 ingredient creme quantite 540 peremption 2026-12-01
+ZADD stock:R04:peremption 20261201 L0067
+ZADD stock:R04:creme:lots 20261201 L0067
+HSET stock:R04 creme 540
+HSET stock:R04:lot:L0068 restaurant R04 ingredient croutons quantite 480 peremption 2027-05-07
+ZADD stock:R04:peremption 20270507 L0068
+ZADD stock:R04:croutons:lots 20270507 L0068
+HSET stock:R04:lot:L0069 restaurant R04 ingredient croutons quantite 480 peremption 2027-06-20
+ZADD stock:R04:peremption 20270620 L0069
+ZADD stock:R04:croutons:lots 20270620 L0069
+HSET stock:R04 croutons 960
+HSET stock:R04:lot:L0070 restaurant R04 ingredient echalote quantite 440 peremption 2026-12-03
+ZADD stock:R04:peremption 20261203 L0070
+ZADD stock:R04:echalote:lots 20261203 L0070
+HSET stock:R04:lot:L0071 restaurant R04 ingredient echalote quantite 600 peremption 2026-11-28
+ZADD stock:R04:peremption 20261128 L0071
+ZADD stock:R04:echalote:lots 20261128 L0071
+HSET stock:R04 echalote 1040
+HSET stock:R04:lot:L0072 restaurant R04 ingredient moules quantite 10400 peremption 2026-11-24
+ZADD stock:R04:peremption 20261124 L0072
+ZADD stock:R04:moules:lots 20261124 L0072
+HSET stock:R04:lot:L0073 restaurant R04 ingredient moules quantite 5200 peremption 2026-11-22
+ZADD stock:R04:peremption 20261122 L0073
+ZADD stock:R04:moules:lots 20261122 L0073
+HSET stock:R04 moules 15600
+HSET stock:R04:lot:L0074 restaurant R04 ingredient oeuf quantite 300 peremption 2026-11-28
+ZADD stock:R04:peremption 20261128 L0074
+ZADD stock:R04:oeuf:lots 20261128 L0074
+HSET stock:R04 oeuf 300
+HSET stock:R04:lot:L0075 restaurant R04 ingredient oignon quantite 2240 peremption 2027-05-10
+ZADD stock:R04:peremption 20270510 L0075
+ZADD stock:R04:oignon:lots 20270510 L0075
+HSET stock:R04 oignon 2240
+HSET stock:R04:lot:L0076 restaurant R04 ingredient pain_epices quantite 840 peremption 2027-02-14
+ZADD stock:R04:peremption 20270214 L0076
+ZADD stock:R04:pain_epices:lots 20270214 L0076
+HSET stock:R04 pain_epices 840
+HSET stock:R04:lot:L0077 restaurant R04 ingredient parmesan quantite 240 peremption 2026-12-04
+ZADD stock:R04:peremption 20261204 L0077
+ZADD stock:R04:parmesan:lots 20261204 L0077
+HSET stock:R04 parmesan 240
+HSET stock:R04:lot:L0078 restaurant R04 ingredient pomme_de_terre quantite 4250 peremption 2027-01-06
+ZADD stock:R04:peremption 20270106 L0078
+ZADD stock:R04:pomme_de_terre:lots 20270106 L0078
+HSET stock:R04 pomme_de_terre 4250
+HSET stock:R04:lot:L0079 restaurant R04 ingredient poulet quantite 2000 peremption 2026-11-21
+ZADD stock:R04:peremption 20261121 L0079
+ZADD stock:R04:poulet:lots 20261121 L0079
+HSET stock:R04 poulet 2000
+HSET stock:R04:lot:L0080 restaurant R04 ingredient salade quantite 2160 peremption 2026-11-24
+ZADD stock:R04:peremption 20261124 L0080
+ZADD stock:R04:salade:lots 20261124 L0080
+HSET stock:R04 salade 2160
+HSET stock:R04:lot:L0081 restaurant R04 ingredient vin_blanc quantite 1350 peremption 2027-01-22
+ZADD stock:R04:peremption 20270122 L0081
+ZADD stock:R04:vin_blanc:lots 20270122 L0081
+HSET stock:R04 vin_blanc 1350
+
+HSET stock:R05:lot:L0082 restaurant R05 ingredient biere quantite 2550 peremption 2027-07-08
+ZADD stock:R05:peremption 20270708 L0082
+ZADD stock:R05:biere:lots 20270708 L0082
+HSET stock:R05:lot:L0083 restaurant R05 ingredient biere quantite 3750 peremption 2027-07-14
+ZADD stock:R05:peremption 20270714 L0083
+ZADD stock:R05:biere:lots 20270714 L0083
+HSET stock:R05 biere 6300
+HSET stock:R05:lot:L0084 restaurant R05 ingredient boeuf quantite 4000 peremption 2026-11-21
+ZADD stock:R05:peremption 20261121 L0084
+ZADD stock:R05:boeuf:lots 20261121 L0084
+HSET stock:R05:lot:L0085 restaurant R05 ingredient boeuf quantite 3250 peremption 2026-11-24
+ZADD stock:R05:peremption 20261124 L0085
+ZADD stock:R05:boeuf:lots 20261124 L0085
+HSET stock:R05 boeuf 7250
+HSET stock:R05:lot:L0086 restaurant R05 ingredient citron quantite 690 peremption 2026-11-29
+ZADD stock:R05:peremption 20261129 L0086
+ZADD stock:R05:citron:lots 20261129 L0086
+HSET stock:R05:lot:L0087 restaurant R05 ingredient citron quantite 720 peremption 2026-12-04
+ZADD stock:R05:peremption 20261204 L0087
+ZADD stock:R05:citron:lots 20261204 L0087
+HSET stock:R05 citron 1410
+HSET stock:R05:lot:L0088 restaurant R05 ingredient creme quantite 900 peremption 2026-12-03
+ZADD stock:R05:peremption 20261203 L0088
+ZADD stock:R05:creme:lots 20261203 L0088
+HSET stock:R05 creme 900
+HSET stock:R05:lot:L0089 restaurant R05 ingredient echalote quantite 220 peremption 2026-11-29
+ZADD stock:R05:peremption 20261129 L0089
+ZADD stock:R05:echalote:lots 20261129 L0089
+HSET stock:R05 echalote 220
+HSET stock:R05:lot:L0090 restaurant R05 ingredient moules quantite 5200 peremption 2026-11-22
+ZADD stock:R05:peremption 20261122 L0090
+ZADD stock:R05:moules:lots 20261122 L0090
+HSET stock:R05:lot:L0091 restaurant R05 ingredient moules quantite 6400 peremption 2026-11-22
+ZADD stock:R05:peremption 20261122 L0091
+ZADD stock:R05:moules:lots 20261122 L0091
+HSET stock:R05 moules 11600
+HSET stock:R05:lot:L0092 restaurant R05 ingredient moutarde quantite 210 peremption 2027-04-07
+ZADD stock:R05:peremption 20270407 L0092
+ZADD stock:R05:moutarde:lots 20270407 L0092
+HSET stock:R05:lot:L0093 restaurant R05 ingredient moutarde quantite 220 peremption 2027-03-01
+ZADD stock:R05:peremption 20270301 L0093
+ZADD stock:R05:moutarde:lots 20270301 L0093
+HSET stock:R05 moutarde 430
+HSET stock:R05:lot:L0094 restaurant R05 ingredient oignon quantite 3910 peremption 2027-01-08
+ZADD stock:R05:peremption 20270108 L0094
+ZADD stock:R05:oignon:lots 20270108 L0094
+HSET stock:R05:lot:L0095 restaurant R05 ingredient oignon quantite 5520 peremption 2027-07-14
+ZADD stock:R05:peremption 20270714 L0095
+ZADD stock:R05:oignon:lots 20270714 L0095
+HSET stock:R05 oignon 9430
+HSET stock:R05:lot:L0096 restaurant R05 ingredient pain_epices quantite 330 peremption 2027-06-04
+ZADD stock:R05:peremption 20270604 L0096
+ZADD stock:R05:pain_epices:lots 20270604 L0096
+HSET stock:R05 pain_epices 330
+HSET stock:R05:lot:L0097 restaurant R05 ingredient pomme_de_terre quantite 3000 peremption 2027-06-30
+ZADD stock:R05:peremption 20270630 L0097
+ZADD stock:R05:pomme_de_terre:lots 20270630 L0097
+HSET stock:R05 pomme_de_terre 3000
+HSET stock:R05:lot:L0098 restaurant R05 ingredient poulet quantite 3000 peremption 2026-11-24
+ZADD stock:R05:peremption 20261124 L0098
+ZADD stock:R05:poulet:lots 20261124 L0098
+HSET stock:R05 poulet 3000
+HSET stock:R05:lot:L0099 restaurant R05 ingredient riz quantite 3750 peremption 2027-02-12
+ZADD stock:R05:peremption 20270212 L0099
+ZADD stock:R05:riz:lots 20270212 L0099
+HSET stock:R05:lot:L0100 restaurant R05 ingredient riz quantite 3300 peremption 2027-01-04
+ZADD stock:R05:peremption 20270104 L0100
+ZADD stock:R05:riz:lots 20270104 L0100
+HSET stock:R05 riz 7050
+HSET stock:R05:lot:L0101 restaurant R05 ingredient vin_blanc quantite 1100 peremption 2026-12-20
+ZADD stock:R05:peremption 20261220 L0101
+ZADD stock:R05:vin_blanc:lots 20261220 L0101
+HSET stock:R05 vin_blanc 1100
+
+HSET stock:R06:lot:L0102 restaurant R06 ingredient beurre quantite 360 peremption 2026-11-30
+ZADD stock:R06:peremption 20261130 L0102
+ZADD stock:R06:beurre:lots 20261130 L0102
+HSET stock:R06:lot:L0103 restaurant R06 ingredient beurre quantite 380 peremption 2026-11-29
+ZADD stock:R06:peremption 20261129 L0103
+ZADD stock:R06:beurre:lots 20261129 L0103
+HSET stock:R06 beurre 740
+HSET stock:R06:lot:L0104 restaurant R06 ingredient biscuit quantite 560 peremption 2027-02-06
+ZADD stock:R06:peremption 20270206 L0104
+ZADD stock:R06:biscuit:lots 20270206 L0104
+HSET stock:R06:lot:L0105 restaurant R06 ingredient biscuit quantite 760 peremption 2027-02-13
+ZADD stock:R06:peremption 20270213 L0105
+ZADD stock:R06:biscuit:lots 20270213 L0105
+HSET stock:R06 biscuit 1320
+HSET stock:R06:lot:L0106 restaurant R06 ingredient cacao quantite 140 peremption 2027-06-26
+ZADD stock:R06:peremption 20270626 L0106
+ZADD stock:R06:cacao:lots 20270626 L0106
+HSET stock:R06 cacao 140
+HSET stock:R06:lot:L0107 restaurant R06 ingredient cafe quantite 600 peremption 2027-01-03
+ZADD stock:R06:peremption 20270103 L0107
+ZADD stock:R06:cafe:lots 20270103 L0107
+HSET stock:R06 cafe 600
+HSET stock:R06:lot:L0108 restaurant R06 ingredient creme quantite 1400 peremption 2026-11-30
+ZADD stock:R06:peremption 20261130 L0108
+ZADD stock:R06:creme:lots 20261130 L0108
+HSET stock:R06 creme 1400
+HSET stock:R06:lot:L0109 restaurant R06 ingredient croutons quantite 330 peremption 2027-04-29
+ZADD stock:R06:peremption 20270429 L0109
+ZADD stock:R06:croutons:lots 20270429 L0109
+HSET stock:R06 croutons 330
+HSET stock:R06:lot:L0110 restaurant R06 ingredient ecrevisse quantite 1200 peremption 2026-11-21
+ZADD stock:R06:peremption 20261121 L0110
+ZADD stock:R06:ecrevisse:lots 20261121 L0110
+HSET stock:R06 ecrevisse 1200
+HSET stock:R06:lot:L0111 restaurant R06 ingredient lardons quantite 1360 peremption 2026-11-24
+ZADD stock:R06:peremption 20261124 L0111
+ZADD stock:R06:lardons:lots 20261124 L0111
+HSET stock:R06 lardons 1360
+HSET stock:R06:lot:L0112 restaurant R06 ingredient mascarpone quantite 2240 peremption 2026-11-26
+ZADD stock:R06:peremption 20261126 L0112
+ZADD stock:R06:mascarpone:lots 20261126 L0112
+HSET stock:R06 mascarpone 2240
+HSET stock:R06:lot:L0113 restaurant R06 ingredient moutarde quantite 290 peremption 2027-01-09
+ZADD stock:R06:peremption 20270109 L0113
+ZADD stock:R06:moutarde:lots 20270109 L0113
+HSET stock:R06 moutarde 290
+HSET stock:R06:lot:L0114 restaurant R06 ingredient oeuf quantite 2800 peremption 2026-12-02
+ZADD stock:R06:peremption 20261202 L0114
+ZADD stock:R06:oeuf:lots 20261202 L0114
+HSET stock:R06:lot:L0115 restaurant R06 ingredient oeuf quantite 2600 peremption 2026-11-28
+ZADD stock:R06:peremption 20261128 L0115
+ZADD stock:R06:oeuf:lots 20261128 L0115
+HSET stock:R06 oeuf 5400
+HSET stock:R06:lot:L0116 restaurant R06 ingredient quenelle quantite 3200 peremption 2026-11-23
+ZADD stock:R06:peremption 20261123 L0116
+ZADD stock:R06:quenelle:lots 20261123 L0116
+HSET stock:R06:lot:L0117 restaurant R06 ingredient quenelle quantite 3400 peremption 2026-11-23
+ZADD stock:R06:peremption 20261123 L0117
+ZADD stock:R06:quenelle:lots 20261123 L0117
+HSET stock:R06 quenelle 6600
+HSET stock:R06:lot:L0118 restaurant R06 ingredient salade quantite 1400 peremption 2026-11-23
+ZADD stock:R06:peremption 20261123 L0118
+ZADD stock:R06:salade:lots 20261123 L0118
+HSET stock:R06:lot:L0119 restaurant R06 ingredient salade quantite 2400 peremption 2026-11-23
+ZADD stock:R06:peremption 20261123 L0119
+ZADD stock:R06:salade:lots 20261123 L0119
+HSET stock:R06 salade 3800
+
+HSET stock:R07:lot:L0120 restaurant R07 ingredient beurre quantite 150 peremption 2026-11-30
+ZADD stock:R07:peremption 20261130 L0120
+ZADD stock:R07:beurre:lots 20261130 L0120
+HSET stock:R07 beurre 150
+HSET stock:R07:lot:L0121 restaurant R07 ingredient champignon quantite 1200 peremption 2026-11-25
+ZADD stock:R07:peremption 20261125 L0121
+ZADD stock:R07:champignon:lots 20261125 L0121
+HSET stock:R07 champignon 1200
+HSET stock:R07:lot:L0122 restaurant R07 ingredient croutons quantite 780 peremption 2027-02-25
+ZADD stock:R07:peremption 20270225 L0122
+ZADD stock:R07:croutons:lots 20270225 L0122
+HSET stock:R07 croutons 780
+HSET stock:R07:lot:L0123 restaurant R07 ingredient graines_sesame quantite 100 peremption 2027-01-06
+ZADD stock:R07:peremption 20270106 L0123
+ZADD stock:R07:graines_sesame:lots 20270106 L0123
+HSET stock:R07 graines_sesame 100
+HSET stock:R07:lot:L0124 restaurant R07 ingredient lardons quantite 1680 peremption 2026-11-23
+ZADD stock:R07:peremption 20261123 L0124
+ZADD stock:R07:lardons:lots 20261123 L0124
+HSET stock:R07 lardons 1680
+HSET stock:R07:lot:L0125 restaurant R07 ingredient moutarde quantite 240 peremption 2027-05-08
+ZADD stock:R07:peremption 20270508 L0125
+ZADD stock:R07:moutarde:lots 20270508 L0125
+HSET stock:R07 moutarde 240
+HSET stock:R07:lot:L0126 restaurant R07 ingredient oeuf quantite 1450 peremption 2026-12-03
+ZADD stock:R07:peremption 20261203 L0126
+ZADD stock:R07:oeuf:lots 20261203 L0126
+HSET stock:R07:lot:L0127 restaurant R07 ingredient oeuf quantite 1300 peremption 2026-11-23
+ZADD stock:R07:peremption 20261123 L0127
+ZADD stock:R07:oeuf:lots 20261123 L0127
+HSET stock:R07 oeuf 2750
+HSET stock:R07:lot:L0128 restaurant R07 ingredient parmesan quantite 320 peremption 2026-11-25
+ZADD stock:R07:peremption 20261125 L0128
+ZADD stock:R07:parmesan:lots 20261125 L0128
+HSET stock:R07:lot:L0129 restaurant R07 ingredient parmesan quantite 450 peremption 2026-11-24
+ZADD stock:R07:peremption 20261124 L0129
+ZADD stock:R07:parmesan:lots 20261124 L0129
+HSET stock:R07 parmesan 770
+HSET stock:R07:lot:L0130 restaurant R07 ingredient riz quantite 4050 peremption 2027-01-28
+ZADD stock:R07:peremption 20270128 L0130
+ZADD stock:R07:riz:lots 20270128 L0130
+HSET stock:R07 riz 4050
+HSET stock:R07:lot:L0131 restaurant R07 ingredient riz_arborio quantite 2280 peremption 2027-05-23
+ZADD stock:R07:peremption 20270523 L0131
+ZADD stock:R07:riz_arborio:lots 20270523 L0131
+HSET stock:R07:lot:L0132 restaurant R07 ingredient riz_arborio quantite 1920 peremption 2027-06-21
+ZADD stock:R07:peremption 20270621 L0132
+ZADD stock:R07:riz_arborio:lots 20270621 L0132
+HSET stock:R07 riz_arborio 4200
+HSET stock:R07:lot:L0133 restaurant R07 ingredient salade quantite 1600 peremption 2026-11-23
+ZADD stock:R07:peremption 20261123 L0133
+ZADD stock:R07:salade:lots 20261123 L0133
+HSET stock:R07:lot:L0134 restaurant R07 ingredient salade quantite 2600 peremption 2026-11-24
+ZADD stock:R07:peremption 20261124 L0134
+ZADD stock:R07:salade:lots 20261124 L0134
+HSET stock:R07 salade 4200
+HSET stock:R07:lot:L0135 restaurant R07 ingredient sauce_soja quantite 220 peremption 2027-01-12
+ZADD stock:R07:peremption 20270112 L0135
+ZADD stock:R07:sauce_soja:lots 20270112 L0135
+HSET stock:R07:lot:L0136 restaurant R07 ingredient sauce_soja quantite 600 peremption 2027-04-07
+ZADD stock:R07:peremption 20270407 L0136
+ZADD stock:R07:sauce_soja:lots 20270407 L0136
+HSET stock:R07 sauce_soja 820
+HSET stock:R07:lot:L0137 restaurant R07 ingredient saumon quantite 1760 peremption 2026-11-21
+ZADD stock:R07:peremption 20261121 L0137
+ZADD stock:R07:saumon:lots 20261121 L0137
+HSET stock:R07:lot:L0138 restaurant R07 ingredient saumon quantite 3200 peremption 2026-11-22
+ZADD stock:R07:peremption 20261122 L0138
+ZADD stock:R07:saumon:lots 20261122 L0138
+HSET stock:R07 saumon 4960
+HSET stock:R07:lot:L0139 restaurant R07 ingredient vin_blanc quantite 450 peremption 2027-06-27
+ZADD stock:R07:peremption 20270627 L0139
+ZADD stock:R07:vin_blanc:lots 20270627 L0139
+HSET stock:R07:lot:L0140 restaurant R07 ingredient vin_blanc quantite 720 peremption 2027-05-10
+ZADD stock:R07:peremption 20270510 L0140
+ZADD stock:R07:vin_blanc:lots 20270510 L0140
+HSET stock:R07 vin_blanc 1170
+
+HSET stock:R08:lot:L0141 restaurant R08 ingredient boeuf quantite 7290 peremption 2026-11-21
+ZADD stock:R08:peremption 20261121 L0141
+ZADD stock:R08:boeuf:lots 20261121 L0141
+HSET stock:R08:lot:L0142 restaurant R08 ingredient boeuf quantite 3510 peremption 2026-11-21
+ZADD stock:R08:peremption 20261121 L0142
+ZADD stock:R08:boeuf:lots 20261121 L0142
+HSET stock:R08 boeuf 10800
+HSET stock:R08:lot:L0143 restaurant R08 ingredient cacahuete quantite 940 peremption 2026-12-29
+ZADD stock:R08:peremption 20261229 L0143
+ZADD stock:R08:cacahuete:lots 20261229 L0143
+HSET stock:R08 cacahuete 940
+HSET stock:R08:lot:L0144 restaurant R08 ingredient cheddar quantite 840 peremption 2026-12-01
+ZADD stock:R08:peremption 20261201 L0144
+ZADD stock:R08:cheddar:lots 20261201 L0144
+HSET stock:R08:lot:L0145 restaurant R08 ingredient cheddar quantite 420 peremption 2026-11-29
+ZADD stock:R08:peremption 20261129 L0145
+ZADD stock:R08:cheddar:lots 20261129 L0145
+HSET stock:R08 cheddar 1260
+HSET stock:R08:lot:L0146 restaurant R08 ingredient crevette quantite 1320 peremption 2026-11-23
+ZADD stock:R08:peremption 20261123 L0146
+ZADD stock:R08:crevette:lots 20261123 L0146
+HSET stock:R08 crevette 1320
+HSET stock:R08:lot:L0147 restaurant R08 ingredient nouilles_riz quantite 1650 peremption 2027-03-21
+ZADD stock:R08:peremption 20270321 L0147
+ZADD stock:R08:nouilles_riz:lots 20270321 L0147
+HSET stock:R08:lot:L0148 restaurant R08 ingredient nouilles_riz quantite 2400 peremption 2027-06-12
+ZADD stock:R08:peremption 20270612 L0148
+ZADD stock:R08:nouilles_riz:lots 20270612 L0148
+HSET stock:R08 nouilles_riz 4050
+HSET stock:R08:lot:L0149 restaurant R08 ingredient nuoc_mam quantite 200 peremption 2027-03-20
+ZADD stock:R08:peremption 20270320 L0149
+ZADD stock:R08:nuoc_mam:lots 20270320 L0149
+HSET stock:R08 nuoc_mam 200
+HSET stock:R08:lot:L0150 restaurant R08 ingredient oeuf quantite 1450 peremption 2026-12-04
+ZADD stock:R08:peremption 20261204 L0150
+ZADD stock:R08:oeuf:lots 20261204 L0150
+HSET stock:R08:lot:L0151 restaurant R08 ingredient oeuf quantite 700 peremption 2026-11-26
+ZADD stock:R08:peremption 20261126 L0151
+ZADD stock:R08:oeuf:lots 20261126 L0151
+HSET stock:R08 oeuf 2150
+HSET stock:R08:lot:L0152 restaurant R08 ingredient pain_burger quantite 1200 peremption 2026-11-29
+ZADD stock:R08:peremption 20261129 L0152
+ZADD stock:R08:pain_burger:lots 20261129 L0152
+HSET stock:R08 pain_burger 1200
+HSET stock:R08:lot:L0153 restaurant R08 ingredient salade quantite 750 peremption 2026-11-23
+ZADD stock:R08:peremption 20261123 L0153
+ZADD stock:R08:salade:lots 20261123 L0153
+HSET stock:R08 salade 750
+HSET stock:R08:lot:L0154 restaurant R08 ingredient tomate quantite 510 peremption 2026-11-27
+ZADD stock:R08:peremption 20261127 L0154
+ZADD stock:R08:tomate:lots 20261127 L0154
+HSET stock:R08:lot:L0155 restaurant R08 ingredient tomate quantite 450 peremption 2026-12-04
+ZADD stock:R08:peremption 20261204 L0155
+ZADD stock:R08:tomate:lots 20261204 L0155
+HSET stock:R08 tomate 960
+HSET stock:R08:lot:L0156 restaurant R08 ingredient vermicelle_riz quantite 2640 peremption 2026-12-29
+ZADD stock:R08:peremption 20261229 L0156
+ZADD stock:R08:vermicelle_riz:lots 20261229 L0156
+HSET stock:R08 vermicelle_riz 2640
+
+HSET stock:R09:lot:L0157 restaurant R09 ingredient boeuf quantite 4250 peremption 2026-11-22
+ZADD stock:R09:peremption 20261122 L0157
+ZADD stock:R09:boeuf:lots 20261122 L0157
+HSET stock:R09:lot:L0158 restaurant R09 ingredient boeuf quantite 6000 peremption 2026-11-23
+ZADD stock:R09:peremption 20261123 L0158
+ZADD stock:R09:boeuf:lots 20261123 L0158
+HSET stock:R09 boeuf 10250
+HSET stock:R09:lot:L0159 restaurant R09 ingredient echalote quantite 510 peremption 2026-11-26
+ZADD stock:R09:peremption 20261126 L0159
+ZADD stock:R09:echalote:lots 20261126 L0159
+HSET stock:R09:lot:L0160 restaurant R09 ingredient echalote quantite 300 peremption 2026-12-03
+ZADD stock:R09:peremption 20261203 L0160
+ZADD stock:R09:echalote:lots 20261203 L0160
+HSET stock:R09 echalote 810
+HSET stock:R09:lot:L0161 restaurant R09 ingredient farine quantite 550 peremption 2027-03-14
+ZADD stock:R09:peremption 20270314 L0161
+ZADD stock:R09:farine:lots 20270314 L0161
+HSET stock:R09 farine 550
+HSET stock:R09:lot:L0162 restaurant R09 ingredient graines_sesame quantite 60 peremption 2027-07-05
+ZADD stock:R09:peremption 20270705 L0162
+ZADD stock:R09:graines_sesame:lots 20270705 L0162
+HSET stock:R09:lot:L0163 restaurant R09 ingredient graines_sesame quantite 90 peremption 2027-03-19
+ZADD stock:R09:peremption 20270319 L0163
+ZADD stock:R09:graines_sesame:lots 20270319 L0163
+HSET stock:R09 graines_sesame 150
+HSET stock:R09:lot:L0164 restaurant R09 ingredient lait quantite 1620 peremption 2026-11-28
+ZADD stock:R09:peremption 20261128 L0164
+ZADD stock:R09:lait:lots 20261128 L0164
+HSET stock:R09:lot:L0165 restaurant R09 ingredient lait quantite 600 peremption 2026-11-24
+ZADD stock:R09:peremption 20261124 L0165
+ZADD stock:R09:lait:lots 20261124 L0165
+HSET stock:R09 lait 2220
+HSET stock:R09:lot:L0166 restaurant R09 ingredient moelle quantite 300 peremption 2026-11-25
+ZADD stock:R09:peremption 20261125 L0166
+ZADD stock:R09:moelle:lots 20261125 L0166
+HSET stock:R09:lot:L0167 restaurant R09 ingredient moelle quantite 360 peremption 2026-11-21
+ZADD stock:R09:peremption 20261121 L0167
+ZADD stock:R09:moelle:lots 20261121 L0167
+HSET stock:R09 moelle 660
+HSET stock:R09:lot:L0168 restaurant R09 ingredient oeuf quantite 870 peremption 2026-11-29
+ZADD stock:R09:peremption 20261129 L0168
+ZADD stock:R09:oeuf:lots 20261129 L0168
+HSET stock:R09 oeuf 870
+HSET stock:R09:lot:L0169 restaurant R09 ingredient pomme_de_terre quantite 4000 peremption 2027-04-10
+ZADD stock:R09:peremption 20270410 L0169
+ZADD stock:R09:pomme_de_terre:lots 20270410 L0169
+HSET stock:R09:lot:L0170 restaurant R09 ingredient pomme_de_terre quantite 5800 peremption 2027-04-29
+ZADD stock:R09:peremption 20270429 L0170
+ZADD stock:R09:pomme_de_terre:lots 20270429 L0170
+HSET stock:R09 pomme_de_terre 9800
+HSET stock:R09:lot:L0171 restaurant R09 ingredient rhum quantite 110 peremption 2027-05-16
+ZADD stock:R09:peremption 20270516 L0171
+ZADD stock:R09:rhum:lots 20270516 L0171
+HSET stock:R09 rhum 110
+HSET stock:R09:lot:L0172 restaurant R09 ingredient riz quantite 2700 peremption 2026-12-31
+ZADD stock:R09:peremption 20261231 L0172
+ZADD stock:R09:riz:lots 20261231 L0172
+HSET stock:R09 riz 2700
+HSET stock:R09:lot:L0173 restaurant R09 ingredient sauce_soja quantite 200 peremption 2027-05-02
+ZADD stock:R09:peremption 20270502 L0173
+ZADD stock:R09:sauce_soja:lots 20270502 L0173
+HSET stock:R09:lot:L0174 restaurant R09 ingredient sauce_soja quantite 540 peremption 2027-06-13
+ZADD stock:R09:peremption 20270613 L0174
+ZADD stock:R09:sauce_soja:lots 20270613 L0174
+HSET stock:R09 sauce_soja 740
+HSET stock:R09:lot:L0175 restaurant R09 ingredient saumon quantite 3360 peremption 2026-11-24
+ZADD stock:R09:peremption 20261124 L0175
+ZADD stock:R09:saumon:lots 20261124 L0175
+HSET stock:R09 saumon 3360
+HSET stock:R09:lot:L0176 restaurant R09 ingredient sucre quantite 800 peremption 2027-05-28
+ZADD stock:R09:peremption 20270528 L0176
+ZADD stock:R09:sucre:lots 20270528 L0176
+HSET stock:R09 sucre 800
+HSET stock:R09:lot:L0177 restaurant R09 ingredient vin_rouge quantite 1040 peremption 2027-06-22
+ZADD stock:R09:peremption 20270622 L0177
+ZADD stock:R09:vin_rouge:lots 20270622 L0177
+HSET stock:R09:lot:L0178 restaurant R09 ingredient vin_rouge quantite 1520 peremption 2027-04-28
+ZADD stock:R09:peremption 20270428 L0178
+ZADD stock:R09:vin_rouge:lots 20270428 L0178
+HSET stock:R09 vin_rouge 2560
+
+HSET stock:R10:lot:L0179 restaurant R10 ingredient anchois quantite 230 peremption 2026-11-23
+ZADD stock:R10:peremption 20261123 L0179
+ZADD stock:R10:anchois:lots 20261123 L0179
+HSET stock:R10:lot:L0180 restaurant R10 ingredient anchois quantite 220 peremption 2026-11-23
+ZADD stock:R10:peremption 20261123 L0180
+ZADD stock:R10:anchois:lots 20261123 L0180
+HSET stock:R10 anchois 450
+HSET stock:R10:lot:L0181 restaurant R10 ingredient boeuf quantite 4000 peremption 2026-11-24
+ZADD stock:R10:peremption 20261124 L0181
+ZADD stock:R10:boeuf:lots 20261124 L0181
+HSET stock:R10 boeuf 4000
+HSET stock:R10:lot:L0182 restaurant R10 ingredient croutons quantite 450 peremption 2027-05-26
+ZADD stock:R10:peremption 20270526 L0182
+ZADD stock:R10:croutons:lots 20270526 L0182
+HSET stock:R10:lot:L0183 restaurant R10 ingredient croutons quantite 840 peremption 2027-03-07
+ZADD stock:R10:peremption 20270307 L0183
+ZADD stock:R10:croutons:lots 20270307 L0183
+HSET stock:R10 croutons 1290
+HSET stock:R10:lot:L0184 restaurant R10 ingredient echalote quantite 810 peremption 2026-11-23
+ZADD stock:R10:peremption 20261123 L0184
+ZADD stock:R10:echalote:lots 20261123 L0184
+HSET stock:R10:lot:L0185 restaurant R10 ingredient echalote quantite 570 peremption 2026-11-27
+ZADD stock:R10:peremption 20261127 L0185
+ZADD stock:R10:echalote:lots 20261127 L0185
+HSET stock:R10 echalote 1380
+HSET stock:R10:lot:L0186 restaurant R10 ingredient farine quantite 580 peremption 2027-07-09
+ZADD stock:R10:peremption 20270709 L0186
+ZADD stock:R10:farine:lots 20270709 L0186
+HSET stock:R10 farine 580
+HSET stock:R10:lot:L0187 restaurant R10 ingredient lait quantite 1440 peremption 2026-11-30
+ZADD stock:R10:peremption 20261130 L0187
+ZADD stock:R10:lait:lots 20261130 L0187
+HSET stock:R10:lot:L0188 restaurant R10 ingredient lait quantite 1440 peremption 2026-12-03
+ZADD stock:R10:peremption 20261203 L0188
+ZADD stock:R10:lait:lots 20261203 L0188
+HSET stock:R10 lait 2880
+HSET stock:R10:lot:L0189 restaurant R10 ingredient moelle quantite 520 peremption 2026-11-24
+ZADD stock:R10:peremption 20261124 L0189
+ZADD stock:R10:moelle:lots 20261124 L0189
+HSET stock:R10 moelle 520
+HSET stock:R10:lot:L0190 restaurant R10 ingredient oeuf quantite 660 peremption 2026-11-27
+ZADD stock:R10:peremption 20261127 L0190
+ZADD stock:R10:oeuf:lots 20261127 L0190
+HSET stock:R10 oeuf 660
+HSET stock:R10:lot:L0191 restaurant R10 ingredient parmesan quantite 240 peremption 2026-11-26
+ZADD stock:R10:peremption 20261126 L0191
+ZADD stock:R10:parmesan:lots 20261126 L0191
+HSET stock:R10:lot:L0192 restaurant R10 ingredient parmesan quantite 380 peremption 2026-11-26
+ZADD stock:R10:peremption 20261126 L0192
+ZADD stock:R10:parmesan:lots 20261126 L0192
+HSET stock:R10 parmesan 620
+HSET stock:R10:lot:L0193 restaurant R10 ingredient pomme_de_terre quantite 2800 peremption 2026-12-26
+ZADD stock:R10:peremption 20261226 L0193
+ZADD stock:R10:pomme_de_terre:lots 20261226 L0193
+HSET stock:R10 pomme_de_terre 2800
+HSET stock:R10:lot:L0194 restaurant R10 ingredient poulet quantite 1700 peremption 2026-11-24
+ZADD stock:R10:peremption 20261124 L0194
+ZADD stock:R10:poulet:lots 20261124 L0194
+HSET stock:R10 poulet 1700
+HSET stock:R10:lot:L0195 restaurant R10 ingredient rhum quantite 120 peremption 2027-04-05
+ZADD stock:R10:peremption 20270405 L0195
+ZADD stock:R10:rhum:lots 20270405 L0195
+HSET stock:R10 rhum 120
+HSET stock:R10:lot:L0196 restaurant R10 ingredient salade quantite 2640 peremption 2026-11-24
+ZADD stock:R10:peremption 20261124 L0196
+ZADD stock:R10:salade:lots 20261124 L0196
+HSET stock:R10 salade 2640
+HSET stock:R10:lot:L0197 restaurant R10 ingredient sucre quantite 680 peremption 2027-01-26
+ZADD stock:R10:peremption 20270126 L0197
+ZADD stock:R10:sucre:lots 20270126 L0197
+HSET stock:R10:lot:L0198 restaurant R10 ingredient sucre quantite 1200 peremption 2027-06-14
+ZADD stock:R10:peremption 20270614 L0198
+ZADD stock:R10:sucre:lots 20270614 L0198
+HSET stock:R10 sucre 1880
+HSET stock:R10:lot:L0199 restaurant R10 ingredient vin_rouge quantite 1040 peremption 2027-07-07
+ZADD stock:R10:peremption 20270707 L0199
+ZADD stock:R10:vin_rouge:lots 20270707 L0199
+HSET stock:R10 vin_rouge 1040
