@@ -14,6 +14,8 @@ services:
       - "60 1"           # snapshot RDB toutes les 60 s s'il y a eu au moins 1 changement
     volumes:
       - redis-data:/data # les fichiers AOF + RDB vivent ici, hors du conteneur
+      - ./scripts:/scripts:ro # scripts Lua du repo, lisibles par redis-cli --eval
+      - ./seed:/seed:ro       # fichiers de seed du repo
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 5s
