@@ -40,3 +40,4 @@ services:
 volumes:
   redis-data:
   redisinsight-data:
+ 
