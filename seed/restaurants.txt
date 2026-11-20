@@ -1,0 +1,12 @@
+HSET carte:restaurant:R01 nom "TableFlow Bastille" ville Paris adresse "12 rue de la Roquette" sur_place 1 livraison 1 statut ouvert
+HSET carte:restaurant:R02 nom "TableFlow Montmartre" ville Paris adresse "8 rue des Abbesses" sur_place 1 livraison 0 statut ouvert
+HSET carte:restaurant:R03 nom "TableFlow République" ville Paris adresse "25 boulevard du Temple" sur_place 0 livraison 1 statut ouvert
+HSET carte:restaurant:R04 nom "TableFlow Lille Centre" ville Lille adresse "5 place du Théâtre" sur_place 1 livraison 1 statut ouvert
+HSET carte:restaurant:R05 nom "TableFlow Vieux-Lille" ville Lille adresse "14 rue de la Monnaie" sur_place 1 livraison 0 statut ouvert
+HSET carte:restaurant:R06 nom "TableFlow Presqu'île" ville Lyon adresse "3 rue Mercière" sur_place 1 livraison 1 statut ouvert
+HSET carte:restaurant:R07 nom "TableFlow Croix-Rousse" ville Lyon adresse "40 boulevard de la Croix-Rousse" sur_place 1 livraison 1 statut ouvert
+HSET carte:restaurant:R08 nom "TableFlow Part-Dieu" ville Lyon adresse "10 rue Servient" sur_place 0 livraison 1 statut ouvert
+HSET carte:restaurant:R09 nom "TableFlow Chartrons" ville Bordeaux adresse "22 rue Notre-Dame" sur_place 1 livraison 1 statut ouvert
+HSET carte:restaurant:R10 nom "TableFlow Saint-Pierre" ville Bordeaux adresse "6 place du Parlement" sur_place 1 livraison 0 statut ferme
+
+SADD carte:restaurants R01 R02 R03 R04 R05 R06 R07 R08 R09 R10
