@@ -1,0 +1,133 @@
+HSET carte:plat:P001 nom "Poulet yassa" restaurant R01 prix 1450 categorie plat
+HSET carte:plat:P001:recette poulet 200 oignon 150 citron 30 riz 150 moutarde 15
+SADD carte:plat:P001:allergenes moutarde
+SADD carte:restaurant:R01:plats P001
+HSET carte:plat:P002 nom "Pizza margherita" restaurant R01 prix 1200 categorie plat
+HSET carte:plat:P002:recette pate 250 tomate 100 mozzarella 125 basilic 5
+SADD carte:plat:P002:allergenes gluten lait
+SADD carte:restaurant:R01:plats P002
+HSET carte:plat:P003 nom "Pad thaï" restaurant R01 prix 1350 categorie plat
+HSET carte:plat:P003:recette nouilles_riz 150 crevette 120 oeuf 50 cacahuete 20
+SADD carte:plat:P003:allergenes crustaces oeuf arachide
+SADD carte:restaurant:R01:plats P003
+HSET carte:plat:P004 nom "Tiramisu" restaurant R01 prix 650 categorie dessert
+HSET carte:plat:P004:recette mascarpone 80 oeuf 50 biscuit 40 cafe 30 cacao 5
+SADD carte:plat:P004:allergenes lait oeuf gluten
+SADD carte:restaurant:R01:plats P004
+
+HSET carte:plat:P005 nom "Salade César" restaurant R02 prix 1100 categorie entree
+HSET carte:plat:P005:recette salade 120 poulet 100 parmesan 20 croutons 30 oeuf 25 anchois 10
+SADD carte:plat:P005:allergenes lait gluten oeuf poisson
+SADD carte:restaurant:R02:plats P005
+HSET carte:plat:P006 nom "Risotto aux champignons" restaurant R02 prix 1500 categorie plat
+HSET carte:plat:P006:recette riz_arborio 120 champignon 100 parmesan 25 vin_blanc 30 beurre 15
+SADD carte:plat:P006:allergenes lait sulfites
+SADD carte:restaurant:R02:plats P006
+HSET carte:plat:P007 nom "Tiramisu" restaurant R02 prix 650 categorie dessert
+HSET carte:plat:P007:recette mascarpone 80 oeuf 50 biscuit 40 cafe 30 cacao 5
+SADD carte:plat:P007:allergenes lait oeuf gluten
+SADD carte:restaurant:R02:plats P007
+
+HSET carte:plat:P008 nom "Burger classique" restaurant R03 prix 1400 categorie plat
+HSET carte:plat:P008:recette pain_burger 80 boeuf 150 cheddar 30 salade 20 tomate 30
+SADD carte:plat:P008:allergenes gluten lait sesame
+SADD carte:restaurant:R03:plats P008
+HSET carte:plat:P009 nom "Bo bun" restaurant R03 prix 1300 categorie plat
+HSET carte:plat:P009:recette vermicelle_riz 120 boeuf 120 salade 30 cacahuete 15 nuoc_mam 15
+SADD carte:plat:P009:allergenes arachide poisson
+SADD carte:restaurant:R03:plats P009
+HSET carte:plat:P010 nom "Assiette falafel houmous" restaurant R03 prix 1150 categorie plat
+HSET carte:plat:P010:recette pois_chiche 200 tahini 30 citron 15 pain_pita 80
+SADD carte:plat:P010:allergenes sesame gluten
+SADD carte:restaurant:R03:plats P010
+
+HSET carte:plat:P011 nom "Moules frites" restaurant R04 prix 1500 categorie plat
+HSET carte:plat:P011:recette moules 400 pomme_de_terre 250 vin_blanc 50 echalote 20 creme 30
+SADD carte:plat:P011:allergenes mollusques sulfites lait
+SADD carte:restaurant:R04:plats P011
+HSET carte:plat:P012 nom "Carbonade flamande" restaurant R04 prix 1600 categorie plat
+HSET carte:plat:P012:recette boeuf 250 biere 150 oignon 80 pain_epices 30
+SADD carte:plat:P012:allergenes gluten
+SADD carte:restaurant:R04:plats P012
+HSET carte:plat:P013 nom "Salade César" restaurant R04 prix 1000 categorie entree
+HSET carte:plat:P013:recette salade 120 poulet 100 parmesan 20 croutons 30 oeuf 25 anchois 10
+SADD carte:plat:P013:allergenes lait gluten oeuf poisson
+SADD carte:restaurant:R04:plats P013
+
+HSET carte:plat:P014 nom "Carbonade flamande" restaurant R05 prix 1600 categorie plat
+HSET carte:plat:P014:recette boeuf 250 biere 150 oignon 80 pain_epices 30
+SADD carte:plat:P014:allergenes gluten
+SADD carte:restaurant:R05:plats P014
+HSET carte:plat:P015 nom "Moules frites" restaurant R05 prix 1500 categorie plat
+HSET carte:plat:P015:recette moules 400 pomme_de_terre 250 vin_blanc 50 echalote 20 creme 30
+SADD carte:plat:P015:allergenes mollusques sulfites lait
+SADD carte:restaurant:R05:plats P015
+HSET carte:plat:P016 nom "Poulet yassa" restaurant R05 prix 1350 categorie plat
+HSET carte:plat:P016:recette poulet 200 oignon 150 citron 30 riz 150 moutarde 15
+SADD carte:plat:P016:allergenes moutarde
+SADD carte:restaurant:R05:plats P016
+
+HSET carte:plat:P017 nom "Quenelles sauce Nantua" restaurant R06 prix 1700 categorie plat
+HSET carte:plat:P017:recette quenelle 200 ecrevisse 80 creme 50 beurre 20
+SADD carte:plat:P017:allergenes gluten oeuf lait crustaces
+SADD carte:restaurant:R06:plats P017
+HSET carte:plat:P018 nom "Salade lyonnaise" restaurant R06 prix 1000 categorie entree
+HSET carte:plat:P018:recette salade 100 lardons 80 oeuf 50 croutons 30 moutarde 10
+SADD carte:plat:P018:allergenes oeuf gluten moutarde
+SADD carte:restaurant:R06:plats P018
+HSET carte:plat:P019 nom "Tiramisu" restaurant R06 prix 550 categorie dessert
+HSET carte:plat:P019:recette mascarpone 80 oeuf 50 biscuit 40 cafe 30 cacao 5
+SADD carte:plat:P019:allergenes lait oeuf gluten
+SADD carte:restaurant:R06:plats P019
+
+HSET carte:plat:P020 nom "Salade lyonnaise" restaurant R07 prix 1000 categorie entree
+HSET carte:plat:P020:recette salade 100 lardons 80 oeuf 50 croutons 30 moutarde 10
+SADD carte:plat:P020:allergenes oeuf gluten moutarde
+SADD carte:restaurant:R07:plats P020
+HSET carte:plat:P021 nom "Risotto aux champignons" restaurant R07 prix 1400 categorie plat
+HSET carte:plat:P021:recette riz_arborio 120 champignon 100 parmesan 25 vin_blanc 30 beurre 15
+SADD carte:plat:P021:allergenes lait sulfites
+SADD carte:restaurant:R07:plats P021
+HSET carte:plat:P022 nom "Saumon teriyaki" restaurant R07 prix 1550 categorie plat
+HSET carte:plat:P022:recette saumon 160 riz 150 sauce_soja 20 graines_sesame 5
+SADD carte:plat:P022:allergenes poisson soja sesame
+SADD carte:restaurant:R07:plats P022
+
+HSET carte:plat:P023 nom "Burger classique" restaurant R08 prix 1300 categorie plat
+HSET carte:plat:P023:recette pain_burger 80 boeuf 150 cheddar 30 salade 20 tomate 30
+SADD carte:plat:P023:allergenes gluten lait sesame
+SADD carte:restaurant:R08:plats P023
+HSET carte:plat:P024 nom "Pad thaï" restaurant R08 prix 1250 categorie plat
+HSET carte:plat:P024:recette nouilles_riz 150 crevette 120 oeuf 50 cacahuete 20
+SADD carte:plat:P024:allergenes crustaces oeuf arachide
+SADD carte:restaurant:R08:plats P024
+HSET carte:plat:P025 nom "Bo bun" restaurant R08 prix 1200 categorie plat
+HSET carte:plat:P025:recette vermicelle_riz 120 boeuf 120 salade 30 cacahuete 15 nuoc_mam 15
+SADD carte:plat:P025:allergenes arachide poisson
+SADD carte:restaurant:R08:plats P025
+
+HSET carte:plat:P026 nom "Entrecôte bordelaise" restaurant R09 prix 2100 categorie plat
+HSET carte:plat:P026:recette boeuf 250 vin_rouge 80 echalote 30 moelle 20 pomme_de_terre 200
+SADD carte:plat:P026:allergenes sulfites
+SADD carte:restaurant:R09:plats P026
+HSET carte:plat:P027 nom "Canelé" restaurant R09 prix 350 categorie dessert
+HSET carte:plat:P027:recette lait 60 farine 25 sucre 40 oeuf 30 rhum 5
+SADD carte:plat:P027:allergenes lait gluten oeuf
+SADD carte:restaurant:R09:plats P027
+HSET carte:plat:P028 nom "Saumon teriyaki" restaurant R09 prix 1550 categorie plat
+HSET carte:plat:P028:recette saumon 160 riz 150 sauce_soja 20 graines_sesame 5
+SADD carte:plat:P028:allergenes poisson soja sesame
+SADD carte:restaurant:R09:plats P028
+
+HSET carte:plat:P029 nom "Entrecôte bordelaise" restaurant R10 prix 2100 categorie plat
+HSET carte:plat:P029:recette boeuf 250 vin_rouge 80 echalote 30 moelle 20 pomme_de_terre 200
+SADD carte:plat:P029:allergenes sulfites
+SADD carte:restaurant:R10:plats P029
+HSET carte:plat:P030 nom "Salade César" restaurant R10 prix 1000 categorie entree
+HSET carte:plat:P030:recette salade 120 poulet 100 parmesan 20 croutons 30 oeuf 25 anchois 10
+SADD carte:plat:P030:allergenes lait gluten oeuf poisson
+SADD carte:restaurant:R10:plats P030
+HSET carte:plat:P031 nom "Canelé" restaurant R10 prix 350 categorie dessert
+HSET carte:plat:P031:recette lait 60 farine 25 sucre 40 oeuf 30 rhum 5
+SADD carte:plat:P031:allergenes lait gluten oeuf
+SADD carte:restaurant:R10:plats P031
